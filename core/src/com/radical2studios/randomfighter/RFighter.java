@@ -23,8 +23,8 @@ public class RFighter extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		background = new Texture("bg001.png");
-		atlas1 = new TextureAtlas(Gdx.files.internal("knightSprites/attack.atlas"));
-		atlas2 = new TextureAtlas(Gdx.files.internal("knightSprites/idle.atlas"));
+		atlas1 = new TextureAtlas(Gdx.files.internal("knightSprites/redKnight/idle.atlas"));
+		atlas2 = new TextureAtlas(Gdx.files.internal("knightSprites/blueKnight/idle.atlas"));
 
 		animation1 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), atlas1.getRegions());
 		animation2 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), atlas2.getRegions());
@@ -37,11 +37,9 @@ public class RFighter extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		batch.draw(background, 0, 0);
-		batch.setColor(Color.SKY);
 		batch.draw(animation1.getKeyFrame(elapsedTime, true), 64, 62);
 		otherguy = animation2.getKeyFrame(elapsedTime, true);
 		if(!otherguy.isFlipX()) otherguy.flip(true, false);
-		batch.setColor(Color.SALMON);
 		batch.draw(otherguy, 1280-(128+(294/2)), 62);
 		batch.setColor(Color.WHITE);
 		batch.end();

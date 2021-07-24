@@ -31,7 +31,8 @@ www-test/
 /android/out/
 com_crashlytics_export_strings.xml
 
-## VSCode
+
+### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -39,8 +40,10 @@ com_crashlytics_export_strings.xml
 !.vscode/extensions.json
 *.code-workspace
 
-### Local History for Visual Studio Code
-.history/
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ## Eclipse
 

@@ -1,9 +1,9 @@
 package com.radical2studios.randomfighter.views;
 
-import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.ScreenAdapter;
 import com.radical2studios.randomfighter.RFighter;
 
-public class LoadingScreen implements Screen {
+public class LoadingScreen extends ScreenAdapter {
 
   private RFighter parent;
 
@@ -20,30 +20,6 @@ public class LoadingScreen implements Screen {
   @Override
   public void render(float delta) {
     parent.changeScreen(ScreenType.MENU);
-  }
-
-  @Override
-  public void resize(int width, int height) {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  public void pause() {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  public void resume() {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  public void hide() {
-    // TODO Auto-generated method stub
-    
   }
 
   @Override

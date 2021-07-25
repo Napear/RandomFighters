@@ -1,7 +1,7 @@
 package com.radical2studios.randomfighter.views;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -13,7 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.radical2studios.randomfighter.RFighter;
 
-public class MenuScreen implements Screen{
+public class MenuScreen extends ScreenAdapter{
 
   private Stage stage;
   private Texture background;
@@ -73,24 +73,6 @@ public class MenuScreen implements Screen{
   @Override
   public void resize(int width, int height) {
     stage.getViewport().update(width, height);
-  }
-
-  @Override
-  public void pause() {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  public void resume() {
-    // TODO Auto-generated method stub
-    
-  }
-
-  @Override
-  public void hide() {
-    // TODO Auto-generated method stub
-    
   }
 
   @Override

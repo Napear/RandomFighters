@@ -1,8 +1,15 @@
 package com.radical2studios.randomfighter.views;
 
 import com.badlogic.gdx.Screen;
+import com.radical2studios.randomfighter.RFighter;
 
 public class LoadingScreen implements Screen {
+
+  private RFighter parent;
+
+  public LoadingScreen(RFighter parent){
+    this.parent = parent;
+  }
 
   @Override
   public void show() {

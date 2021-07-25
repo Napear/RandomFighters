@@ -20,23 +20,23 @@ public class RFighter extends Game {
 		switch(screen){
 			case MENU:
 				if(menuScreen == null) menuScreen = new MenuScreen(this);
-				this.setScreen(menuScreen);			
+				setScreen(menuScreen);			
 				break;
 			case LOADING:
 				if(loadingScreen == null) loadingScreen = new LoadingScreen(this);
-				this.setScreen(loadingScreen);
+				setScreen(loadingScreen);
 				break;
 			case MATCH_UP:
 				if(matchUpScreen == null) matchUpScreen = new MatchUpScreen(this);
-				this.setScreen(matchUpScreen);
+				setScreen(matchUpScreen);
 				break;
 			case BATTLE:
 				if(battleScreen == null) battleScreen = new BattleScreen(this);
-				this.setScreen(battleScreen);
+				setScreen(battleScreen);
 				break;
 			case END:
 				if(endScreen == null) endScreen = new EndScreen(this);
-				this.setScreen(endScreen);				
+				setScreen(endScreen);				
 				break;
 		}
 	}
@@ -46,14 +46,5 @@ public class RFighter extends Game {
 		loadingScreen = new LoadingScreen(this);
 		setScreen(loadingScreen);
 	}
-
-	@Override
-	public void render () {
-		
-	}
 	
-	@Override
-	public void dispose () {
-
-	}
 }

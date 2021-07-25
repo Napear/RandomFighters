@@ -1,15 +1,6 @@
 package com.radical2studios.randomfighter;
 
 import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Animation;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.math.MathUtils;
 import com.radical2studios.randomfighter.views.BattleScreen;
 import com.radical2studios.randomfighter.views.EndScreen;
 import com.radical2studios.randomfighter.views.LoadingScreen;
@@ -28,23 +19,23 @@ public class RFighter extends Game {
 	public void changeScreen(ScreenType screen) {
 		switch(screen){
 			case MENU:
-				if(menuScreen == null) menuScreen = new MenuScreen();
+				if(menuScreen == null) menuScreen = new MenuScreen(this);
 				this.setScreen(menuScreen);			
 				break;
 			case LOADING:
-				if(loadingScreen == null) loadingScreen = new LoadingScreen();
+				if(loadingScreen == null) loadingScreen = new LoadingScreen(this);
 				this.setScreen(loadingScreen);
 				break;
 			case MATCH_UP:
-				if(matchUpScreen == null) matchUpScreen = new MatchUpScreen();
+				if(matchUpScreen == null) matchUpScreen = new MatchUpScreen(this);
 				this.setScreen(matchUpScreen);
 				break;
 			case BATTLE:
-				if(battleScreen == null) battleScreen = new BattleScreen();
+				if(battleScreen == null) battleScreen = new BattleScreen(this);
 				this.setScreen(battleScreen);
 				break;
 			case END:
-				if(endScreen == null) endScreen = new EndScreen();
+				if(endScreen == null) endScreen = new EndScreen(this);
 				this.setScreen(endScreen);				
 				break;
 		}

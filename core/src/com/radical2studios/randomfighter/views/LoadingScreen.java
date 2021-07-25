@@ -7,8 +7,8 @@ public class LoadingScreen implements Screen {
 
   private RFighter parent;
 
-  public LoadingScreen(RFighter parent){
-    this.parent = parent;
+  public LoadingScreen(RFighter rFighter){
+    this.parent = rFighter;
   }
 
   @Override
@@ -19,8 +19,7 @@ public class LoadingScreen implements Screen {
 
   @Override
   public void render(float delta) {
-    // TODO Auto-generated method stub
-    
+    parent.changeScreen(ScreenType.MENU);
   }
 
   @Override

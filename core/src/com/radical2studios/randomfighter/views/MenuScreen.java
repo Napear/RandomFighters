@@ -21,13 +21,13 @@ public class MenuScreen extends ScreenAdapter{
 
   public MenuScreen(RFighter rFighter) {
     stage = new Stage(new ScreenViewport());
-    Gdx.input.setInputProcessor(stage);
 		background = new Texture("bg001.png");
     parent = rFighter;
   }
 
   @Override
   public void show() {
+    Gdx.input.setInputProcessor(stage);
     Table table = new Table();
     table.setFillParent(true);    
     table.setDebug(false);
@@ -68,6 +68,11 @@ public class MenuScreen extends ScreenAdapter{
     stage.getBatch().end();
 
     stage.draw();
+  }
+
+  @Override
+  public void hide() {
+    Gdx.input.setInputProcessor(null);
   }
 
   @Override

@@ -28,15 +28,14 @@ public class BattleScreen extends ScreenAdapter {
   public BattleScreen(RFighter rFighter) {
     this.parent = rFighter;
     stage = new Stage(new ScreenViewport());
-    Gdx.input.setInputProcessor(stage);
+    background = new Texture("bg001.png");
+		redAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/redKnight/walk.atlas"));
+		blueAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/blueKnight/idle.atlas"));
   }
 
   @Override
   public void show() {
-		background = new Texture("bg001.png");
-		redAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/redKnight/walk.atlas"));
-		blueAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/blueKnight/idle.atlas"));
-
+    Gdx.input.setInputProcessor(stage);
 		animation1 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), redAtlas.getRegions());
 		animation2 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), blueAtlas.getRegions());
   }
@@ -61,9 +60,8 @@ public class BattleScreen extends ScreenAdapter {
   }
 
   @Override
-  public void resize(int width, int height) {
-    // TODO Auto-generated method stub
-    
+  public void hide() {
+    Gdx.input.setInputProcessor(null);
   }
 
   @Override

@@ -22,6 +22,7 @@ public class MenuScreen implements Screen{
   public MenuScreen(RFighter rFighter) {
     stage = new Stage(new ScreenViewport());
     Gdx.input.setInputProcessor(stage);
+		background = new Texture("bg001.png");
     parent = rFighter;
   }
 
@@ -31,9 +32,6 @@ public class MenuScreen implements Screen{
     table.setFillParent(true);    
     table.setDebug(false);
     stage.addActor(table);
-
-		background = new Texture("bg001.png");
-
 
     Skin skin = new Skin(Gdx.files.internal("comicSkin/skin/comic-ui.json"));
 

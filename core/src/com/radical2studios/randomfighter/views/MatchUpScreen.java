@@ -1,8 +1,12 @@
 package com.radical2studios.randomfighter.views;
 
 import com.badlogic.gdx.Screen;
+import com.radical2studios.randomfighter.RFighter;
 
 public class MatchUpScreen implements Screen {
+
+  public MatchUpScreen(RFighter rFighter) {
+  }
 
   @Override
   public void show() {

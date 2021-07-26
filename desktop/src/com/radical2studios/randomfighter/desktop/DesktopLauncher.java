@@ -8,7 +8,7 @@ public class DesktopLauncher {
 	public static void main (String[] arg) {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 
-		config.setTitle("Random Fighter");
+		config.setTitle("Trial By Combat");
 		config.setResizable(false);
 		config.setWindowedMode(1280, 720);
 

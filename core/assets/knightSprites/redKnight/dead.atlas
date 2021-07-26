@@ -1,0 +1,76 @@
+
+dead.png
+size: 2048, 1024
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+Dead
+  rotate: false
+  xy: 2, 4
+  size: 222, 318
+  orig: 472, 376
+  offset: 249, 51
+  index: 1
+Dead
+  rotate: false
+  xy: 351, 4
+  size: 218, 319
+  orig: 472, 376
+  offset: 244, 50
+  index: 2
+Dead
+  rotate: false
+  xy: 700, 4
+  size: 219, 314
+  orig: 472, 376
+  offset: 200, 49
+  index: 3
+Dead
+  rotate: false
+  xy: 1049, 4
+  size: 245, 282
+  orig: 472, 376
+  offset: 132, 46
+  index: 4
+Dead
+  rotate: false
+  xy: 1398, 4
+  size: 252, 272
+  orig: 472, 376
+  offset: 109, 39
+  index: 5
+Dead
+  rotate: false
+  xy: 2, 325
+  size: 265, 253
+  orig: 472, 376
+  offset: 91, 35
+  index: 6
+Dead
+  rotate: false
+  xy: 351, 325
+  size: 287, 226
+  orig: 472, 376
+  offset: 68, 33
+  index: 7
+Dead
+  rotate: false
+  xy: 700, 325
+  size: 332, 185
+  orig: 472, 376
+  offset: 29, 29
+  index: 8
+Dead
+  rotate: false
+  xy: 1049, 325
+  size: 345, 164
+  orig: 472, 376
+  offset: 18, 28
+  index: 9
+Dead
+  rotate: false
+  xy: 1398, 325
+  size: 347, 161
+  orig: 472, 376
+  offset: 15, 26
+  index: 10

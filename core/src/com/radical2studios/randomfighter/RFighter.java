@@ -47,7 +47,6 @@ public class RFighter extends Game {
 		assets = new FigherAssets();
 		assets.loadImages();
 		assets.loadSkin();
-		assets.manager.finishLoading();
 		loadingScreen = new LoadingScreen(this);
 		setScreen(loadingScreen);
 	}

@@ -13,8 +13,7 @@ public class LoadingScreen extends ScreenAdapter {
 
   @Override
   public void show() {
-    // TODO Auto-generated method stub
-    
+    parent.assets.manager.finishLoading();
   }
 
   @Override

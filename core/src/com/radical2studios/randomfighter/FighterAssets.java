@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
-public class FigherAssets {
+public class FighterAssets {
 
   public final AssetManager manager = new AssetManager();
   public final String RED_KNIGHT_ATLAS = "redKnightFull/redKnight.atlas";

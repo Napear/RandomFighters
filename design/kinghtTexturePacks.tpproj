@@ -31,8 +31,8 @@ bleed=true
 limitMemory=true
 useIndexes=true
 
-scaleFactors=[{suffix:"",factor:0.75,resampling:bicubic}]
-inputFiles=[{path:../../../Art/Asset/Sprites/knightSprits/attack,type:Input,dirFilePrefix:attack,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/walk,type:Input,dirFilePrefix:walk,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/dead,type:Input,dirFilePrefix:dead,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/idle,type:Input,dirFilePrefix:idle,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/jump,type:Input,dirFilePrefix:jump,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/jumpAttack,type:Input,dirFilePrefix:jumpAttack,recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/run,type:Input,dirFilePrefix:run,recursive:true,flattenPaths:false}]
+scaleFactors=[{suffix:"",factor:0.5,resampling:bicubic}]
+inputFiles=[{path:../../../Art/Asset/Sprites/knightSprits/attack,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/walk,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/dead,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/idle,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/jump,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/jumpAttack,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false},{path:../../../Art/Asset/Sprites/knightSprits/run,type:Input,dirFilePrefix:"",recursive:true,flattenPaths:false}]
 
 
 -PROJ-

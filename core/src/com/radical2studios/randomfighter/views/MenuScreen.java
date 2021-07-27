@@ -31,8 +31,8 @@ public class MenuScreen extends ScreenAdapter{
     table.setFillParent(true);    
     table.setDebug(false);
     stage.addActor(table);
-		background = parent.assets.manager.get(parent.assets.BACKGROUND_IMG);
-    Skin skin = parent.assets.manager.get(parent.assets.SKIN_UI);
+		background = parent.assets.get(parent.assets.BACKGROUND_IMG);
+    Skin skin = parent.assets.get(parent.assets.SKIN_UI);
 
     TextButton newBattle = new TextButton("New Battle", skin);
     TextButton exit = new TextButton("Exit", skin);

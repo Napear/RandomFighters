@@ -13,7 +13,7 @@ public class LoadingScreen extends ScreenAdapter {
 
   @Override
   public void show() {
-    parent.assets.manager.finishLoading();
+    parent.assets.finishLoading();
   }
 
   @Override

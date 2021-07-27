@@ -11,6 +11,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.radical2studios.randomfighter.FighterAssets;
 import com.radical2studios.randomfighter.RFighter;
 
 public class MenuScreen extends ScreenAdapter{
@@ -31,8 +32,8 @@ public class MenuScreen extends ScreenAdapter{
     table.setFillParent(true);    
     table.setDebug(false);
     stage.addActor(table);
-		background = parent.assets.get(parent.assets.BACKGROUND_IMG);
-    Skin skin = parent.assets.get(parent.assets.SKIN_UI);
+		background = parent.assets.get(FighterAssets.BACKGROUND_IMG);
+    Skin skin = parent.assets.get(FighterAssets.SKIN_UI);
 
     TextButton newBattle = new TextButton("New Battle", skin);
     TextButton exit = new TextButton("Exit", skin);

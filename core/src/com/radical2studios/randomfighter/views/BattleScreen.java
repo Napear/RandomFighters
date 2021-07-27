@@ -10,6 +10,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import com.radical2studios.randomfighter.FighterAssets;
 import com.radical2studios.randomfighter.RFighter;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
@@ -28,9 +29,9 @@ public class BattleScreen extends ScreenAdapter {
   public BattleScreen(RFighter rFighter) {
     parent = rFighter;
     stage = new Stage(new ScreenViewport());
-    background = parent.assets.get(parent.assets.BACKGROUND_IMG);
-		redAtlas = parent.assets.get(parent.assets.RED_KNIGHT_ATLAS);
-		blueAtlas = parent.assets.get(parent.assets.BLUE_KNIGHT_ATLAS);
+    background = parent.assets.get(FighterAssets.BACKGROUND_IMG);
+		redAtlas = parent.assets.get(FighterAssets.RED_KNIGHT_ATLAS);
+		blueAtlas = parent.assets.get(FighterAssets.BLUE_KNIGHT_ATLAS);
   }
 
   @Override

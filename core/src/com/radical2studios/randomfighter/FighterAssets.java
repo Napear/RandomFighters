@@ -8,12 +8,12 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public class FighterAssets extends AssetManager {
 
-  public final String RED_KNIGHT_ATLAS = "redKnightFull/redKnight.atlas";
-  public final String BLUE_KNIGHT_ATLAS = "blueKnightFull/blueKnight.atlas";
-  public final String BACKGROUND_IMG = "bg001.png";
-  public final String SKIN_BASE = "comicSkin/skin/";
-  public final String SKIN_UI = SKIN_BASE+"comic-ui.json";
-  public final String SKIN_ATLAS = SKIN_BASE+"comic-ui.atlas";
+  public final static String RED_KNIGHT_ATLAS = "redKnightFull/redKnight.atlas";
+  public final static String BLUE_KNIGHT_ATLAS = "blueKnightFull/blueKnight.atlas";
+  public final static String BACKGROUND_IMG = "bg001.png";
+  public final static String SKIN_BASE = "comicSkin/skin/";
+  public final static String SKIN_UI = SKIN_BASE+"comic-ui.json";
+  public final static String SKIN_ATLAS = SKIN_BASE+"comic-ui.atlas";
 
   public void loadImages(){
     load(RED_KNIGHT_ATLAS, TextureAtlas.class);

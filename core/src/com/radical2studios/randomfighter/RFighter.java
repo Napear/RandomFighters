@@ -15,6 +15,7 @@ public class RFighter extends Game {
 	private MatchUpScreen matchUpScreen;
 	private BattleScreen battleScreen;
 	private EndScreen endScreen;
+	public FigherAssets assets;
 
 	public void changeScreen(ScreenType screen) {
 		switch(screen){
@@ -43,6 +44,10 @@ public class RFighter extends Game {
 	
 	@Override
 	public void create () {
+		assets = new FigherAssets();
+		assets.loadImages();
+		assets.loadSkin();
+		assets.manager.finishLoading();
 		loadingScreen = new LoadingScreen(this);
 		setScreen(loadingScreen);
 	}

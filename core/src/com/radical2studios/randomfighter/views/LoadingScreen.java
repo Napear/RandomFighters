@@ -8,7 +8,7 @@ public class LoadingScreen extends ScreenAdapter {
   private RFighter parent;
 
   public LoadingScreen(RFighter rFighter){
-    this.parent = rFighter;
+    parent = rFighter;
   }
 
   @Override

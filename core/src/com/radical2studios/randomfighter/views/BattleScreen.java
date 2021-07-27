@@ -26,7 +26,7 @@ public class BattleScreen extends ScreenAdapter {
   private Stage stage;
 
   public BattleScreen(RFighter rFighter) {
-    this.parent = rFighter;
+    parent = rFighter;
     stage = new Stage(new ScreenViewport());
     background = parent.assets.get(parent.assets.BACKGROUND_IMG);
 		redAtlas = parent.assets.get(parent.assets.RED_KNIGHT_ATLAS);

@@ -21,7 +21,6 @@ public class MenuScreen extends ScreenAdapter{
 
   public MenuScreen(RFighter rFighter) {
     stage = new Stage(new ScreenViewport());
-		background = new Texture("bg001.png");
     parent = rFighter;
   }
 
@@ -32,8 +31,8 @@ public class MenuScreen extends ScreenAdapter{
     table.setFillParent(true);    
     table.setDebug(false);
     stage.addActor(table);
-
-    Skin skin = new Skin(Gdx.files.internal("comicSkin/skin/comic-ui.json"));
+		background = parent.assets.manager.get(parent.assets.BACKGROUND_IMG);
+    Skin skin = parent.assets.manager.get(parent.assets.SKIN_UI);
 
     TextButton newBattle = new TextButton("New Battle", skin);
     TextButton exit = new TextButton("Exit", skin);

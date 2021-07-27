@@ -28,16 +28,16 @@ public class BattleScreen extends ScreenAdapter {
   public BattleScreen(RFighter rFighter) {
     this.parent = rFighter;
     stage = new Stage(new ScreenViewport());
-    background = new Texture("bg001.png");
-		redAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/redKnight/walk.atlas"));
-		blueAtlas = new TextureAtlas(Gdx.files.internal("knightSprites/blueKnight/idle.atlas"));
+    background = parent.assets.manager.get(parent.assets.BACKGROUND_IMG);
+		redAtlas = parent.assets.manager.get(parent.assets.RED_KNIGHT_ATLAS);
+		blueAtlas = parent.assets.manager.get(parent.assets.BLUE_KNIGHT_ATLAS);
   }
 
   @Override
   public void show() {
     Gdx.input.setInputProcessor(stage);
-		animation1 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), redAtlas.getRegions());
-		animation2 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), blueAtlas.getRegions());
+		animation1 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), redAtlas.findRegions("Run"));
+		animation2 = new Animation<TextureRegion>(1f/(16.5f + MathUtils.random(-0.3f, 0.4f)), blueAtlas.findRegions("Idle"));
   }
 
   @Override

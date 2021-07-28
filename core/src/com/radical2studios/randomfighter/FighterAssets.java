@@ -14,6 +14,15 @@ public class FighterAssets extends AssetManager {
   public final static String SKIN_BASE = "comicSkin/skin/";
   public final static String SKIN_UI = SKIN_BASE+"comic-ui.json";
   public final static String SKIN_ATLAS = SKIN_BASE+"comic-ui.atlas";
+  private static FighterAssets instance = null;
+
+
+  private FighterAssets(){ }
+
+  public static FighterAssets getInstance(){
+    if(instance == null) instance = new FighterAssets();
+    return instance;
+  }
 
   public void loadImages(){
     load(RED_KNIGHT_ATLAS, TextureAtlas.class);

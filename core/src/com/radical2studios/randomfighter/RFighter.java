@@ -44,7 +44,7 @@ public class RFighter extends Game {
 	
 	@Override
 	public void create () {
-		assets = new FighterAssets();
+		assets = FighterAssets.getInstance();
 		assets.loadImages();
 		assets.loadSkin();
 		loadingScreen = new LoadingScreen(this);

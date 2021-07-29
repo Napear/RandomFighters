@@ -49,6 +49,10 @@ public class BattleScreen extends ScreenAdapter {
 		stage.getBatch().end();
     stage.draw();
 
+    checkInputs();
+  }
+
+  private void checkInputs() {
     if(Gdx.input.isKeyPressed(Keys.ESCAPE)) parent.changeScreen(ScreenType.MENU);
     if(Gdx.input.isKeyPressed(Keys.UP)) redFighter.setAnimation(FighterAnimationType.ATTACK);
     if(Gdx.input.isKeyPressed(Keys.DOWN)) redFighter.setAnimation(FighterAnimationType.IDLE);

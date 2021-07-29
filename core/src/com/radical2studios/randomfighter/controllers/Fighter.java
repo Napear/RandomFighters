@@ -20,7 +20,7 @@ public class Fighter extends Actor {
   private int health;
   private Rectangle hitbox;
   private HashMap<FighterAnimationType, Animation<TextureRegion>> animations;
-  private FighterAnimationType activeAnimation = null;
+  private FighterAnimationType activeAnimation;
   private Animation<TextureRegion> animation;
   private float elapsedTime, x, y;
   private boolean isFlipped = false;

@@ -1,7 +1,7 @@
 package com.radical2studios.randomfighter.controllers;
 
 public enum FighterAnimationType {
-  WALK("Walk"), RUN("Run"), DIE("Dead"), JUMP("Jump"), ATTACK("Attack"), JUMP_ATTACK("JumpAttack");
+  WALK("Walk"), RUN("Run"), DIE("Dead"), JUMP("Jump"), ATTACK("Attack"), JUMP_ATTACK("JumpAttack"), IDLE("Idle");
 
   private final String text;
 

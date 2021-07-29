@@ -10,6 +10,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.radical2studios.randomfighter.FighterAssets;
 import com.radical2studios.randomfighter.RFighter;
 import com.radical2studios.randomfighter.controllers.Fighter;
+import com.radical2studios.randomfighter.controllers.FighterAnimationType;
 import com.badlogic.gdx.graphics.GL20;
 
 
@@ -42,13 +43,17 @@ public class BattleScreen extends ScreenAdapter {
   public void render(float delta) {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
     stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1/30f));
-    
+
 		stage.getBatch().begin();
 		stage.getBatch().draw(background, 0, 0);
 		stage.getBatch().end();
     stage.draw();
 
     if(Gdx.input.isKeyPressed(Keys.ESCAPE)) parent.changeScreen(ScreenType.MENU);
+    if(Gdx.input.isKeyPressed(Keys.UP)) redFighter.setAnimation(FighterAnimationType.ATTACK);
+    if(Gdx.input.isKeyPressed(Keys.DOWN)) redFighter.setAnimation(FighterAnimationType.IDLE);
+    if(Gdx.input.isKeyPressed(Keys.LEFT)) blueFighter.setAnimation(FighterAnimationType.ATTACK);
+    if(Gdx.input.isKeyPressed(Keys.RIGHT)) blueFighter.setAnimation(FighterAnimationType.IDLE);
   }
 
   @Override

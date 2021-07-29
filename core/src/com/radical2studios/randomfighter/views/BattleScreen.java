@@ -52,8 +52,14 @@ public class BattleScreen extends ScreenAdapter {
     if(Gdx.input.isKeyPressed(Keys.ESCAPE)) parent.changeScreen(ScreenType.MENU);
     if(Gdx.input.isKeyPressed(Keys.UP)) redFighter.setAnimation(FighterAnimationType.ATTACK);
     if(Gdx.input.isKeyPressed(Keys.DOWN)) redFighter.setAnimation(FighterAnimationType.IDLE);
-    if(Gdx.input.isKeyPressed(Keys.LEFT)) blueFighter.setAnimation(FighterAnimationType.ATTACK);
-    if(Gdx.input.isKeyPressed(Keys.RIGHT)) blueFighter.setAnimation(FighterAnimationType.IDLE);
+    if(Gdx.input.isKeyPressed(Keys.LEFT)) {
+      blueFighter.setHealth(0);
+      blueFighter.setAnimation(FighterAnimationType.DIE);
+    }
+    if(Gdx.input.isKeyPressed(Keys.RIGHT)) {
+      blueFighter.setHealth(3);
+      blueFighter.setAnimation(FighterAnimationType.IDLE);
+    }
   }
 
   @Override

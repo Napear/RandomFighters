@@ -74,6 +74,14 @@ public class Fighter extends Actor {
     return health > 0;
   }
 
+  public int getHealth() {
+    return health;
+  }
+
+  public void setHealth(int health) {
+    this.health = health;
+  }
+
   public void attack(){
 
   }
